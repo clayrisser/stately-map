@@ -39,179 +39,126 @@ Example:
       #canvas {
         height: 480px;
       }
-      .stately .tn {
-        color: red;
-      }
-      .stately .mo {
-        color: red;
-      }
-      .stately .ok {
-        color: red;
-      }
-      .stately .ky {
-        color: red;
-      }
-      .stately .il {
-        color: red;
-      }
-      .stately .tx {
-        color: red;
-      }
-      .stately .ar {
-        color: red;
-      }
-      .stately .nc {
-        color: red;
-      }
-      .stately .sc {
-        color: red;
-      }
-      .stately .ga {
-        color: red;
-      }
-      .stately .fl {
-        color: red;
-      }
-      .stately .la {
-        color: red;
-      }
-      .stately .ms {
-        color: red;
-      }
-      .stately .al {
-        color: red;
-      }
-      .stately .nj {
-        color: red;
-      }
-      .stately .de {
-        color: red;
-      }
-      .stately .md {
-        color: red;
-      }
-      .stately .va {
-        color: red;
-      }
-      .stately .dc {
-        color: red;
-      }
     </style>
     
-    <div id="canvas">
-      <ul id="mapDraw" class="stately">
-        <li data-state="al" class="al">A</li>
-        <li data-state="ak" class="ak">B</li>
-        <li data-state="ar" class="ar">C</li>
-        <li data-state="az" class="az">D</li>
-        <li data-state="ca" class="ca">E</li>
-        <li data-state="co" class="co">F</li>
-        <li data-state="ct" class="ct">G</li>
-        <li data-state="de" class="de">H</li>
-        <li data-state="dc" class="dc">I</li>
-        <li data-state="fl" class="fl">J</li>
-        <li data-state="ga" class="ga">K</li>
-        <li data-state="hi" class="hi">L</li>
-        <li data-state="id" class="id">M</li>
-        <li data-state="il" class="il">N</li>
-        <li data-state="in" class="in">O</li>
-        <li data-state="ia" class="ia">P</li>
-        <li data-state="ks" class="ks">Q</li>
-        <li data-state="ky" class="ky">R</li>
-        <li data-state="la" class="la">S</li>
-        <li data-state="me" class="me">T</li>
-        <li data-state="md" class="md">U</li>
-        <li data-state="ma" class="ma">V</li>
-        <li data-state="mi" class="mi">W</li>
-        <li data-state="mn" class="mn">X</li>
-        <li data-state="ms" class="ms">Y</li>
-        <li data-state="mo" class="mo">Z</li>
-        <li data-state="mt" class="mt">a</li>
-        <li data-state="ne" class="ne">b</li>
-        <li data-state="nv" class="nv">c</li>
-        <li data-state="nh" class="nh">d</li>
-        <li data-state="nj" class="nj">e</li>
-        <li data-state="nm" class="nm">f</li>
-        <li data-state="ny" class="ny">g</li>
-        <li data-state="nc" class="nc">h</li>
-        <li data-state="nd" class="nd">i</li>
-        <li data-state="oh" class="oh">j</li>           
-        <li data-state="ok" class="ok">k</li>
-        <li data-state="or" class="or">l</li>
-        <li data-state="pa" class="pa">m</li>
-        <li data-state="ri" class="ri">n</li>
-        <li data-state="sc" class="sc">o</li>
-        <li data-state="sd" class="sd">p</li>
-        <li data-state="tn" class="tn">q</li>
-        <li data-state="tx" class="tx">r</li>
-        <li data-state="ut" class="ut">s</li>
-        <li data-state="va" class="va">t</li>
-        <li data-state="vt" class="vt">u</li>           
-        <li data-state="wa" class="wa">v</li>
-        <li data-state="wv" class="wv">w</li>
-        <li data-state="wi" class="wi">x</li>
-        <li data-state="wy" class="wy">y</li>
-      </ul>
-      
-      <!--
-      <div id="mapLinks">
-        <img id="blankImage" src="stately-assets/images/usa-blank.png" alt="" usemap="#map" />
-        <map name="Map" id="map">
-          <area alt="Alabama" title="Alabama" title="" href="[[alUrl]]" target="[[target]]" shape="poly" coords="400,253,429,250,441,286,442,304,414,309,415,315,403,318,399,298" />
-          <area alt="Alaska" title="Alaska" href="akUrl" target="[[target]]" shape="poly" coords="171,329,191,394,209,392,232,406,239,408,244,417,235,423,205,404,189,400,167,403,158,415,154,427,148,434,88,457,62,462,25,455,7,442,4,431,15,438,34,449,57,455,86,451,124,431,128,422,115,418,112,412,96,410,95,401,110,380,99,371,97,360,109,355,104,343,111,336,130,322" />
-          <area alt="Arizona" title="Arizona" href="[[azUrl]]" target="[[target]]" shape="poly" coords="153,300,163,221,108,213,108,225,104,226,101,223,99,226,99,232,98,236,96,239,98,244,101,250,98,253,95,258,91,263,93,270,88,273,130,297" />
-          <area alt="Arkansas" title="Arkansas" href="[[arUrl]]" target="[[target]]" shape="poly" coords="327,234,375,233,374,239,380,240,371,264,366,276,367,281,331,286,333,278,327,275" />
-          <area alt="California" title="California" href="[[caUrl]]" target="[[target]]" shape="poly" coords="62,129,52,169,98,238,102,251,92,262,95,268,92,270,63,267,61,256,40,237,31,231,30,219,21,203,17,173,12,164,13,149,11,141,19,118" />
-          <area alt="Colorado" title="Colorado" href="[[coUrl]]" target="[[target]]" shape="poly" coords="172,163,209,168,247,171,242,227,164,218" />
-          <area alt="Connecticut" title="Connecticut" href="[[ctUrl]]" target="[[target]]" shape="poly" coords="559,131,556,125,540,127,542,141" />
-          <area alt="Delaware" title="Delaware" href="[[deUrl]]" target="[[target]]" shape="poly" coords="524,165,528,183,535,177,526,165" />
-          <area alt="District of Columbia" title="District of Columbia" href="[[dcUrl]]" target="[[target]]" shape="poly" coords="511,173,508,177,504,176,507,180,507,184,511,184,514,187,515,182,518,179" />
-          <area alt="Florida" title="Florida" href="[[flUrl]]" target="[[target]]" shape="poly" coords="508,379,512,355,484,304,478,302,477,309,474,307,444,309,439,305,409,310,413,316,434,319,442,326,453,319,472,331,471,344,496,376" />
-          <area alt="Georgia" title="Georgia" href="[[gaUrl]]" target="[[target]]" shape="poly" coords="456,247,453,250,474,267,487,284,483,293,482,302,476,304,476,308,443,308,437,292,440,288,427,249" />
-          <area alt="Hawaii" title="Hawaii" href="[[hiUrl]]" target="[[target]]" shape="poly" coords="66,335,55,340,46,324,24,313,14,308,7,312,2,305,11,299,34,306,52,315,67,328" />
-          <area alt="Idaho" title="Idaho" href="[[idUrl]]" target="[[target]]" shape="poly" coords="158,111,152,147,91,135,99,106,95,103,107,88,103,79,107,57,111,40,120,42,118,56,122,67,130,78,126,91,132,91,136,103,140,110,154,108" />
-          <area alt="Illinois" title="Illinois" href="[[ilUrl]]" target="[[target]]" shape="poly" coords="400,198,397,158,391,146,363,148,369,155,366,161,360,164,360,170,356,179,357,186,364,194,367,200,371,199,371,203,370,208,379,216,382,224,386,222,391,223,392,219,395,216" />
-          <area alt="Indiana" title="Indiana" href="[[inUrl]]" target="[[target]]" shape="poly" coords="429,195,422,199,419,207,411,212,395,213,399,200,395,159,402,157,423,155" />
-          <area alt="Iowa" title="Iowa" href="[[iaUrl]]" target="[[target]]" shape="poly" coords="356,178,362,170,360,165,366,163,369,155,362,146,358,144,358,138,354,135,300,135,302,143,300,147,307,159,309,171,310,178,352,176" />
-          <area alt="Kansas" title="Kansas" href="[[ksUrl]]" target="[[target]]" shape="poly" coords="242,227,244,185,272,187,314,186,320,189,317,192,323,199,323,229" />
-          <area alt="Kentucky" title="Kentucky" href="[[kyUrl]]" target="[[target]]" shape="poly" coords="448,223,462,208,454,200,454,196,451,193,445,195,440,193,435,192,429,189,427,195,420,195,421,198,421,201,417,206,413,204,411,210,405,210,400,210,395,212,395,218,390,218,393,223,386,222,384,227,382,233,397,231,397,228" />
-          <area alt="Louisiana" title="Louisiana" href="[[laUrl]]" target="[[target]]" shape="poly" coords="332,285,366,283,370,293,364,303,360,313,384,310,384,315,387,320,392,325,394,336,383,338,371,339,361,332,356,335,342,332,333,333,337,327,337,322,339,315,335,305,332,299" />
-          <area alt="Maine" title="Maine" href="[[meUrl]]" target="[[target]]" shape="poly" coords="551,77,560,102,563,106,569,91,575,91,576,83,592,75,590,67,586,66,584,62,576,43,569,39,565,43,559,42,555,66,553,74" />
-          <area alt="Maryland" title="Maryland" href="[[mdUrl]]" target="[[target]]" shape="poly" coords="484,174,486,180,492,174,495,175,499,171,504,176,508,176,511,173,514,176,516,178,514,181,515,185,523,191,526,193,527,199,530,200,536,179,528,183,526,175,523,166" />
-          <area alt="Massachusetts" title="Massachusetts" href="[[maUrl]]" target="[[target]]" shape="poly" coords="539,128,560,123,566,129,571,128,576,126,574,120,567,117,565,115,567,111,562,108,560,112,539,116" />
-          <area alt="Michigan" title="Michigan" href="[[miUrl]]" target="[[target]]" shape="poly" coords="438,151,405,154,403,146,405,139,401,126,402,116,405,106,412,100,410,96,403,98,396,103,392,108,390,108,387,103,387,100,384,97,378,97,365,94,360,88,375,81,380,81,383,83,387,83,392,87,397,88,402,84,410,81,415,84,422,84,426,90,423,95,426,98,432,101,435,107,435,114,432,119,431,123,433,123,437,116,442,116,444,123,448,132,444,140" />
-          <area alt="Minnesota" title="Minnesota" href="[[mnUrl]]" target="[[target]]" shape="poly" coords="356,134,354,128,347,122,339,118,340,108,338,104,343,99,344,90,354,82,368,73,363,67,354,67,349,69,344,64,336,63,328,63,321,59,318,52,314,54,312,58,296,58,296,71,299,80,299,90,302,100,299,104,300,108,302,112,302,136" />
-          <area alt="Mississippi" title="Mississippi" href="[[msUrl]]" target="[[target]]" shape="poly" coords="375,255,398,253,398,299,401,316,394,318,388,321,383,316,385,311,361,312,363,304,369,295,366,286,366,279,366,271,368,266,371,261,371,257" />
-          <area alt="Missouri" title="Missouri" href="[[moUrl]]" target="[[target]]" shape="poly" coords="379,240,382,233,385,233,385,226,383,226,380,223,380,217,376,214,370,208,371,204,372,200,369,199,367,200,365,197,364,193,358,190,356,185,356,180,353,177,338,177,311,177,315,188,320,189,318,192,323,199,324,228,324,237,334,236,351,234,372,233,376,237,372,240" />
-          <area alt="Montana" title="Montana" href="[[mtUrl]]" target="[[target]]" shape="poly" coords="228,112,232,58,176,51,148,47,119,42,116,52,119,58,120,63,123,70,127,76,130,78,127,83,127,86,124,90,126,93,132,91,133,98,135,103,138,106,138,110,152,110,154,108,156,115,159,106" />
-          <area alt="Nebraska" title="Nebraska" href="[[neUrl]]" target="[[target]]" shape="poly" coords="226,141,222,170,244,171,243,185,316,187,314,183,311,180,310,173,308,165,307,162,306,157,304,153,301,149,295,147,291,147,287,148,282,144" />
-          <area alt="Nevada" title="Nevada" href="[[nvUrl]]" target="[[target]]" shape="poly" coords="122,143,88,137,60,130,50,171,97,239,99,228,99,224,103,224,105,226,108,222" />
-          <area alt="New Hampshire" title="New Hampshire" href="[[nhUrl]]" target="[[target]]" shape="poly" coords="563,107,562,104,559,102,559,97,551,76,548,78,548,82,550,87,547,91,547,98,545,104,546,115,558,114" />
-          <area alt="New Jersey" title="New Jersey" href="[[njUrl]]" target="[[target]]" shape="poly" coords="528,140,527,145,526,152,533,157,530,161,527,164,528,169,534,173,538,172,540,165,542,159,542,153,540,149,538,144" />
-          <area alt="New Mexico" title="New Mexico" href="[[nmUrl]]" target="[[target]]" shape="poly" coords="163,221,200,225,230,225,226,297,186,293,183,296,166,293,164,300,153,298" />
-          <area alt="New York" title="New York" href="[[nyUrl]]" target="[[target]]" shape="poly" coords="520,133,476,141,475,136,480,131,480,127,479,122,482,119,489,117,498,116,504,112,504,107,502,102,508,95,514,89,528,86,532,92,533,99,536,104,538,111,539,123,541,136,540,141,536,142,526,139" />
-          <area alt="North Carolina" title="North Carolina" href="[[ncUrl]]" target="[[target]]" shape="poly" coords="510,253,495,243,482,244,479,241,468,240,462,244,457,246,448,247,442,247,444,244,446,240,450,239,455,234,459,232,462,229,466,227,467,222,521,212,530,209,536,212,541,219,541,226,532,228,533,234,522,241" />
-          <area alt="North Dakota" title="North Dakota" href="[[ndUrl]]" target="[[target]]" shape="poly" coords="302,101,300,95,299,87,299,80,298,73,296,65,296,59,275,59,259,58,232,58,229,100,282,102" />
-          <area alt="Ohio" title="Ohio" href="[[ohUrl]]" target="[[target]]" shape="poly" coords="424,154,438,151,444,152,451,152,456,148,467,142,472,162,470,166,470,173,468,179,464,182,461,184,460,188,458,190,456,198,453,196,449,194,445,195,440,195,438,194,435,192,428,191" />
-          <area alt="Oklahoma" title="Oklahoma" href="[[okUrl]]" target="[[target]]" shape="poly" coords="327,276,326,249,324,241,324,229,292,229,265,228,240,227,230,227,230,235,263,236,263,263,270,265,272,269,281,271,286,269,287,275,291,273,295,275,299,274,306,275,310,274,314,272,319,272" />
-          <area alt="Oregon" title="Oregon" href="[[orUrl]]" target="[[target]]" shape="poly" coords="90,136,60,129,35,123,19,118,16,115,16,110,18,103,25,92,29,79,34,68,36,60,45,64,47,73,52,75,56,74,64,76,69,77,78,77,85,76,94,79,100,79,103,81,106,87,100,97,96,102,98,108" />
-          <area alt="Pennsylvania" title="Pennsylvania" href="[[paUrl]]" target="[[target]]" shape="poly" coords="523,164,525,163,528,162,532,156,528,153,526,150,527,146,529,140,525,137,521,133,518,132,476,142,475,138,467,142,473,174" />
-          <area alt="Rhode Island" title="Rhode Island" href="[[riUrl]]" target="[[target]]" shape="poly" coords="556,123,561,122,567,129,559,134" />
-          <area alt="South Carolina" title="South Carolina" href="[[scUrl]]" target="[[target]]" shape="poly" coords="454,250,455,245,463,242,474,240,482,240,481,243,494,241,510,253,506,259,504,264,503,267,499,271,494,275,489,277,488,282,486,285,484,279,479,271,460,254" />
-          <area alt="South Dakota" title="South Dakota" href="[[sdUrl]]" target="[[target]]" shape="poly" coords="226,141,255,143,282,143,287,147,294,145,303,150,302,146,303,142,302,136,302,133,302,111,299,107,301,103,276,102,265,102,229,99" />
-          <area alt="Tennessee" title="Tennessee" href="[[tnUrl]]" target="[[target]]" shape="poly" coords="443,247,435,248,427,251,399,252,375,255,376,252,375,249,378,242,379,238,382,232,396,232,398,228,401,230,403,229,431,226,448,224,468,221,466,228,460,231,454,236,450,239,445,239" />
-          <area alt="Texas" title="Texas" href="[[txUrl]]" target="[[target]]" shape="poly" coords="183,293,186,303,191,308,198,314,200,320,202,326,207,332,215,337,223,341,226,339,228,331,236,330,244,332,248,340,254,350,259,358,263,364,266,372,272,380,286,386,295,386,295,380,292,370,295,362,302,352,307,348,314,347,323,342,324,335,330,333,336,330,336,324,337,319,339,311,337,306,334,299,332,287,331,276,326,276,322,273,318,271,312,272,306,275,300,273,295,274,290,271,287,273,283,268,279,270,273,267,270,264,264,263,263,235,247,234,230,232,225,296" />
-          <area alt="Utah" title="Utah" href="[[utUrl]]" target="[[target]]" shape="poly" coords="122,143,152,148,150,160,171,165,163,220,133,217,108,213" />
-          <area alt="Vermont" title="Vermont" href="[[vtUrl]]" target="[[target]]" shape="poly" coords="546,114,546,106,546,99,546,94,550,88,548,84,547,80,530,84,531,91,534,99,535,106,538,111,539,116" />
-          <area alt="Virginia" title="Virginia" href="[[vaUrl]]" target="[[target]]" shape="poly" coords="446,225,454,221,456,215,463,210,466,212,472,210,475,208,482,205,482,199,484,195,486,191,490,191,491,187,495,183,498,177,500,175,506,180,507,184,511,186,520,190,526,192,525,202,531,205,531,210" />
-          <area alt="Washington" title="Washington" href="[[waUrl]]" target="[[target]]" shape="poly" coords="38,62,44,64,47,68,47,73,51,75,56,73,62,76,69,76,75,77,81,76,89,78,99,79,104,81,103,75,106,65,111,39,88,35,70,30,58,27,53,30,48,34,44,32,38,29,38,41" />
-          <area alt="West Virginia" title="West Virginia" href="[[wvUrl]]" target="[[target]]" shape="poly" coords="482,207,482,201,484,195,486,191,489,191,492,186,497,180,498,175,503,177,506,177,503,175,500,172,497,172,495,174,493,174,490,176,487,180,484,175,474,175,470,164,470,177,466,181,462,186,459,192,456,197,455,203,460,209,466,212" />
-          <area alt="Wisconsin" title="Wisconsin" href="[[wiUrl]]" target="[[target]]" shape="poly" coords="366,148,380,147,392,145,393,140,393,130,392,122,395,114,395,109,390,111,390,107,387,104,386,99,378,96,369,95,364,93,362,90,358,87,358,83,353,86,347,88,343,89,343,96,343,99,339,102,336,105,341,108,339,113,339,119,346,120,353,127,356,135,358,144" />
-          <area alt="Wyoming" title="Wyoming" href="[[wyUrl]]" target="[[target]]" shape="poly" coords="156,105,174,107,191,110,208,111,228,112,223,168,206,168,187,165,170,163,153,161,149,160" />
-        </map>
+
+      <div id="canvas">
+        <template is="dom-if" if="[[activated]]">
+          <ul id="mapDraw" class="stately">
+            <li data-state="al" class="al" style="color:[[_color('al')]]">A</li>
+            <li data-state="ak" class="ak" style="color:[[_color('ak')]]">B</li>
+            <li data-state="ar" class="ar" style="color:[[_color('ar')]]">C</li>
+            <li data-state="az" class="az" style="color:[[_color('az')]]">D</li>
+            <li data-state="ca" class="ca" style="color:[[_color('ca')]]">E</li>
+            <li data-state="co" class="co" style="color:[[_color('co')]]">F</li>
+            <li data-state="ct" class="ct" style="color:[[_color('ct')]]">G</li>
+            <li data-state="de" class="de" style="color:[[_color('de')]]">H</li>
+            <li data-state="dc" class="dc" style="color:[[_color('dc')]]">I</li>
+            <li data-state="fl" class="fl" style="color:[[_color('fl')]]">J</li>
+            <li data-state="ga" class="ga" style="color:[[_color('ga')]]">K</li>
+            <li data-state="hi" class="hi" style="color:[[_color('hi')]]">L</li>
+            <li data-state="id" class="id" style="color:[[_color('id')]]">M</li>
+            <li data-state="il" class="il" style="color:[[_color('il')]]">N</li>
+            <li data-state="in" class="in" style="color:[[_color('in')]]">O</li>
+            <li data-state="ia" class="ia" style="color:[[_color('ia')]]">P</li>
+            <li data-state="ks" class="ks" style="color:[[_color('ks')]]">Q</li>
+            <li data-state="ky" class="ky" style="color:[[_color('ky')]]">R</li>
+            <li data-state="la" class="la" style="color:[[_color('la')]]">S</li>
+            <li data-state="me" class="me" style="color:[[_color('me')]]">T</li>
+            <li data-state="md" class="md" style="color:[[_color('md')]]">U</li>
+            <li data-state="ma" class="ma" style="color:[[_color('ma')]]">V</li>
+            <li data-state="mi" class="mi" style="color:[[_color('mi')]]">W</li>
+            <li data-state="mn" class="mn" style="color:[[_color('mn')]]">X</li>
+            <li data-state="ms" class="ms" style="color:[[_color('ms')]]">Y</li>
+            <li data-state="mo" class="mo" style="color:[[_color('mo')]]">Z</li>
+            <li data-state="mt" class="mt" style="color:[[_color('mt')]]">a</li>
+            <li data-state="ne" class="ne" style="color:[[_color('ne')]]">b</li>
+            <li data-state="nv" class="nv" style="color:[[_color('nv')]]">c</li>
+            <li data-state="nh" class="nh" style="color:[[_color('nh')]]">d</li>
+            <li data-state="nj" class="nj" style="color:[[_color('nj')]]">e</li>
+            <li data-state="nm" class="nm" style="color:[[_color('nm')]]">f</li>
+            <li data-state="ny" class="ny" style="color:[[_color('ny')]]">g</li>
+            <li data-state="nc" class="nc" style="color:[[_color('nc')]]">h</li>
+            <li data-state="nd" class="nd" style="color:[[_color('nd')]]">i</li>
+            <li data-state="oh" class="oh" style="color:[[_color('oh')]]">j</li>           
+            <li data-state="ok" class="ok" style="color:[[_color('ok')]]">k</li>
+            <li data-state="or" class="or" style="color:[[_color('or')]]">l</li>
+            <li data-state="pa" class="pa" style="color:[[_color('pa')]]">m</li>
+            <li data-state="ri" class="ri" style="color:[[_color('ri')]]">n</li>
+            <li data-state="sc" class="sc" style="color:[[_color('sc')]]">o</li>
+            <li data-state="sd" class="sd" style="color:[[_color('sd')]]">p</li>
+            <li data-state="tn" class="tn" style="color:[[_color('tn')]]">q</li>
+            <li data-state="tx" class="tx" style="color:[[_color('tx')]]">r</li>
+            <li data-state="ut" class="ut" style="color:[[_color('ut')]]">s</li>
+            <li data-state="va" class="va" style="color:[[_color('va')]]">t</li>
+            <li data-state="vt" class="vt" style="color:[[_color('vt')]]">u</li>           
+            <li data-state="wa" class="wa" style="color:[[_color('wa')]]">v</li>
+            <li data-state="wv" class="wv" style="color:[[_color('wv')]]">w</li>
+            <li data-state="wi" class="wi" style="color:[[_color('wi')]]">x</li>
+            <li data-state="wy" class="wy" style="color:[[_color('wy')]]">y</li>
+          </ul>
+        </template>
+        
+        <!--
+        <div id="mapLinks">
+          <img id="blankImage" src="stately-assets/images/usa-blank.png" alt="" usemap="#map" />
+          <map name="Map" id="map">
+            <area alt="Alabama" title="Alabama" title="" href="[[alUrl]]" target="[[target]]" shape="poly" coords="400,253,429,250,441,286,442,304,414,309,415,315,403,318,399,298" />
+            <area alt="Alaska" title="Alaska" href="akUrl" target="[[target]]" shape="poly" coords="171,329,191,394,209,392,232,406,239,408,244,417,235,423,205,404,189,400,167,403,158,415,154,427,148,434,88,457,62,462,25,455,7,442,4,431,15,438,34,449,57,455,86,451,124,431,128,422,115,418,112,412,96,410,95,401,110,380,99,371,97,360,109,355,104,343,111,336,130,322" />
+            <area alt="Arizona" title="Arizona" href="[[azUrl]]" target="[[target]]" shape="poly" coords="153,300,163,221,108,213,108,225,104,226,101,223,99,226,99,232,98,236,96,239,98,244,101,250,98,253,95,258,91,263,93,270,88,273,130,297" />
+            <area alt="Arkansas" title="Arkansas" href="[[arUrl]]" target="[[target]]" shape="poly" coords="327,234,375,233,374,239,380,240,371,264,366,276,367,281,331,286,333,278,327,275" />
+            <area alt="California" title="California" href="[[caUrl]]" target="[[target]]" shape="poly" coords="62,129,52,169,98,238,102,251,92,262,95,268,92,270,63,267,61,256,40,237,31,231,30,219,21,203,17,173,12,164,13,149,11,141,19,118" />
+            <area alt="Colorado" title="Colorado" href="[[coUrl]]" target="[[target]]" shape="poly" coords="172,163,209,168,247,171,242,227,164,218" />
+            <area alt="Connecticut" title="Connecticut" href="[[ctUrl]]" target="[[target]]" shape="poly" coords="559,131,556,125,540,127,542,141" />
+            <area alt="Delaware" title="Delaware" href="[[deUrl]]" target="[[target]]" shape="poly" coords="524,165,528,183,535,177,526,165" />
+            <area alt="District of Columbia" title="District of Columbia" href="[[dcUrl]]" target="[[target]]" shape="poly" coords="511,173,508,177,504,176,507,180,507,184,511,184,514,187,515,182,518,179" />
+            <area alt="Florida" title="Florida" href="[[flUrl]]" target="[[target]]" shape="poly" coords="508,379,512,355,484,304,478,302,477,309,474,307,444,309,439,305,409,310,413,316,434,319,442,326,453,319,472,331,471,344,496,376" />
+            <area alt="Georgia" title="Georgia" href="[[gaUrl]]" target="[[target]]" shape="poly" coords="456,247,453,250,474,267,487,284,483,293,482,302,476,304,476,308,443,308,437,292,440,288,427,249" />
+            <area alt="Hawaii" title="Hawaii" href="[[hiUrl]]" target="[[target]]" shape="poly" coords="66,335,55,340,46,324,24,313,14,308,7,312,2,305,11,299,34,306,52,315,67,328" />
+            <area alt="Idaho" title="Idaho" href="[[idUrl]]" target="[[target]]" shape="poly" coords="158,111,152,147,91,135,99,106,95,103,107,88,103,79,107,57,111,40,120,42,118,56,122,67,130,78,126,91,132,91,136,103,140,110,154,108" />
+            <area alt="Illinois" title="Illinois" href="[[ilUrl]]" target="[[target]]" shape="poly" coords="400,198,397,158,391,146,363,148,369,155,366,161,360,164,360,170,356,179,357,186,364,194,367,200,371,199,371,203,370,208,379,216,382,224,386,222,391,223,392,219,395,216" />
+            <area alt="Indiana" title="Indiana" href="[[inUrl]]" target="[[target]]" shape="poly" coords="429,195,422,199,419,207,411,212,395,213,399,200,395,159,402,157,423,155" />
+            <area alt="Iowa" title="Iowa" href="[[iaUrl]]" target="[[target]]" shape="poly" coords="356,178,362,170,360,165,366,163,369,155,362,146,358,144,358,138,354,135,300,135,302,143,300,147,307,159,309,171,310,178,352,176" />
+            <area alt="Kansas" title="Kansas" href="[[ksUrl]]" target="[[target]]" shape="poly" coords="242,227,244,185,272,187,314,186,320,189,317,192,323,199,323,229" />
+            <area alt="Kentucky" title="Kentucky" href="[[kyUrl]]" target="[[target]]" shape="poly" coords="448,223,462,208,454,200,454,196,451,193,445,195,440,193,435,192,429,189,427,195,420,195,421,198,421,201,417,206,413,204,411,210,405,210,400,210,395,212,395,218,390,218,393,223,386,222,384,227,382,233,397,231,397,228" />
+            <area alt="Louisiana" title="Louisiana" href="[[laUrl]]" target="[[target]]" shape="poly" coords="332,285,366,283,370,293,364,303,360,313,384,310,384,315,387,320,392,325,394,336,383,338,371,339,361,332,356,335,342,332,333,333,337,327,337,322,339,315,335,305,332,299" />
+            <area alt="Maine" title="Maine" href="[[meUrl]]" target="[[target]]" shape="poly" coords="551,77,560,102,563,106,569,91,575,91,576,83,592,75,590,67,586,66,584,62,576,43,569,39,565,43,559,42,555,66,553,74" />
+            <area alt="Maryland" title="Maryland" href="[[mdUrl]]" target="[[target]]" shape="poly" coords="484,174,486,180,492,174,495,175,499,171,504,176,508,176,511,173,514,176,516,178,514,181,515,185,523,191,526,193,527,199,530,200,536,179,528,183,526,175,523,166" />
+            <area alt="Massachusetts" title="Massachusetts" href="[[maUrl]]" target="[[target]]" shape="poly" coords="539,128,560,123,566,129,571,128,576,126,574,120,567,117,565,115,567,111,562,108,560,112,539,116" />
+            <area alt="Michigan" title="Michigan" href="[[miUrl]]" target="[[target]]" shape="poly" coords="438,151,405,154,403,146,405,139,401,126,402,116,405,106,412,100,410,96,403,98,396,103,392,108,390,108,387,103,387,100,384,97,378,97,365,94,360,88,375,81,380,81,383,83,387,83,392,87,397,88,402,84,410,81,415,84,422,84,426,90,423,95,426,98,432,101,435,107,435,114,432,119,431,123,433,123,437,116,442,116,444,123,448,132,444,140" />
+            <area alt="Minnesota" title="Minnesota" href="[[mnUrl]]" target="[[target]]" shape="poly" coords="356,134,354,128,347,122,339,118,340,108,338,104,343,99,344,90,354,82,368,73,363,67,354,67,349,69,344,64,336,63,328,63,321,59,318,52,314,54,312,58,296,58,296,71,299,80,299,90,302,100,299,104,300,108,302,112,302,136" />
+            <area alt="Mississippi" title="Mississippi" href="[[msUrl]]" target="[[target]]" shape="poly" coords="375,255,398,253,398,299,401,316,394,318,388,321,383,316,385,311,361,312,363,304,369,295,366,286,366,279,366,271,368,266,371,261,371,257" />
+            <area alt="Missouri" title="Missouri" href="[[moUrl]]" target="[[target]]" shape="poly" coords="379,240,382,233,385,233,385,226,383,226,380,223,380,217,376,214,370,208,371,204,372,200,369,199,367,200,365,197,364,193,358,190,356,185,356,180,353,177,338,177,311,177,315,188,320,189,318,192,323,199,324,228,324,237,334,236,351,234,372,233,376,237,372,240" />
+            <area alt="Montana" title="Montana" href="[[mtUrl]]" target="[[target]]" shape="poly" coords="228,112,232,58,176,51,148,47,119,42,116,52,119,58,120,63,123,70,127,76,130,78,127,83,127,86,124,90,126,93,132,91,133,98,135,103,138,106,138,110,152,110,154,108,156,115,159,106" />
+            <area alt="Nebraska" title="Nebraska" href="[[neUrl]]" target="[[target]]" shape="poly" coords="226,141,222,170,244,171,243,185,316,187,314,183,311,180,310,173,308,165,307,162,306,157,304,153,301,149,295,147,291,147,287,148,282,144" />
+            <area alt="Nevada" title="Nevada" href="[[nvUrl]]" target="[[target]]" shape="poly" coords="122,143,88,137,60,130,50,171,97,239,99,228,99,224,103,224,105,226,108,222" />
+            <area alt="New Hampshire" title="New Hampshire" href="[[nhUrl]]" target="[[target]]" shape="poly" coords="563,107,562,104,559,102,559,97,551,76,548,78,548,82,550,87,547,91,547,98,545,104,546,115,558,114" />
+            <area alt="New Jersey" title="New Jersey" href="[[njUrl]]" target="[[target]]" shape="poly" coords="528,140,527,145,526,152,533,157,530,161,527,164,528,169,534,173,538,172,540,165,542,159,542,153,540,149,538,144" />
+            <area alt="New Mexico" title="New Mexico" href="[[nmUrl]]" target="[[target]]" shape="poly" coords="163,221,200,225,230,225,226,297,186,293,183,296,166,293,164,300,153,298" />
+            <area alt="New York" title="New York" href="[[nyUrl]]" target="[[target]]" shape="poly" coords="520,133,476,141,475,136,480,131,480,127,479,122,482,119,489,117,498,116,504,112,504,107,502,102,508,95,514,89,528,86,532,92,533,99,536,104,538,111,539,123,541,136,540,141,536,142,526,139" />
+            <area alt="North Carolina" title="North Carolina" href="[[ncUrl]]" target="[[target]]" shape="poly" coords="510,253,495,243,482,244,479,241,468,240,462,244,457,246,448,247,442,247,444,244,446,240,450,239,455,234,459,232,462,229,466,227,467,222,521,212,530,209,536,212,541,219,541,226,532,228,533,234,522,241" />
+            <area alt="North Dakota" title="North Dakota" href="[[ndUrl]]" target="[[target]]" shape="poly" coords="302,101,300,95,299,87,299,80,298,73,296,65,296,59,275,59,259,58,232,58,229,100,282,102" />
+            <area alt="Ohio" title="Ohio" href="[[ohUrl]]" target="[[target]]" shape="poly" coords="424,154,438,151,444,152,451,152,456,148,467,142,472,162,470,166,470,173,468,179,464,182,461,184,460,188,458,190,456,198,453,196,449,194,445,195,440,195,438,194,435,192,428,191" />
+            <area alt="Oklahoma" title="Oklahoma" href="[[okUrl]]" target="[[target]]" shape="poly" coords="327,276,326,249,324,241,324,229,292,229,265,228,240,227,230,227,230,235,263,236,263,263,270,265,272,269,281,271,286,269,287,275,291,273,295,275,299,274,306,275,310,274,314,272,319,272" />
+            <area alt="Oregon" title="Oregon" href="[[orUrl]]" target="[[target]]" shape="poly" coords="90,136,60,129,35,123,19,118,16,115,16,110,18,103,25,92,29,79,34,68,36,60,45,64,47,73,52,75,56,74,64,76,69,77,78,77,85,76,94,79,100,79,103,81,106,87,100,97,96,102,98,108" />
+            <area alt="Pennsylvania" title="Pennsylvania" href="[[paUrl]]" target="[[target]]" shape="poly" coords="523,164,525,163,528,162,532,156,528,153,526,150,527,146,529,140,525,137,521,133,518,132,476,142,475,138,467,142,473,174" />
+            <area alt="Rhode Island" title="Rhode Island" href="[[riUrl]]" target="[[target]]" shape="poly" coords="556,123,561,122,567,129,559,134" />
+            <area alt="South Carolina" title="South Carolina" href="[[scUrl]]" target="[[target]]" shape="poly" coords="454,250,455,245,463,242,474,240,482,240,481,243,494,241,510,253,506,259,504,264,503,267,499,271,494,275,489,277,488,282,486,285,484,279,479,271,460,254" />
+            <area alt="South Dakota" title="South Dakota" href="[[sdUrl]]" target="[[target]]" shape="poly" coords="226,141,255,143,282,143,287,147,294,145,303,150,302,146,303,142,302,136,302,133,302,111,299,107,301,103,276,102,265,102,229,99" />
+            <area alt="Tennessee" title="Tennessee" href="[[tnUrl]]" target="[[target]]" shape="poly" coords="443,247,435,248,427,251,399,252,375,255,376,252,375,249,378,242,379,238,382,232,396,232,398,228,401,230,403,229,431,226,448,224,468,221,466,228,460,231,454,236,450,239,445,239" />
+            <area alt="Texas" title="Texas" href="[[txUrl]]" target="[[target]]" shape="poly" coords="183,293,186,303,191,308,198,314,200,320,202,326,207,332,215,337,223,341,226,339,228,331,236,330,244,332,248,340,254,350,259,358,263,364,266,372,272,380,286,386,295,386,295,380,292,370,295,362,302,352,307,348,314,347,323,342,324,335,330,333,336,330,336,324,337,319,339,311,337,306,334,299,332,287,331,276,326,276,322,273,318,271,312,272,306,275,300,273,295,274,290,271,287,273,283,268,279,270,273,267,270,264,264,263,263,235,247,234,230,232,225,296" />
+            <area alt="Utah" title="Utah" href="[[utUrl]]" target="[[target]]" shape="poly" coords="122,143,152,148,150,160,171,165,163,220,133,217,108,213" />
+            <area alt="Vermont" title="Vermont" href="[[vtUrl]]" target="[[target]]" shape="poly" coords="546,114,546,106,546,99,546,94,550,88,548,84,547,80,530,84,531,91,534,99,535,106,538,111,539,116" />
+            <area alt="Virginia" title="Virginia" href="[[vaUrl]]" target="[[target]]" shape="poly" coords="446,225,454,221,456,215,463,210,466,212,472,210,475,208,482,205,482,199,484,195,486,191,490,191,491,187,495,183,498,177,500,175,506,180,507,184,511,186,520,190,526,192,525,202,531,205,531,210" />
+            <area alt="Washington" title="Washington" href="[[waUrl]]" target="[[target]]" shape="poly" coords="38,62,44,64,47,68,47,73,51,75,56,73,62,76,69,76,75,77,81,76,89,78,99,79,104,81,103,75,106,65,111,39,88,35,70,30,58,27,53,30,48,34,44,32,38,29,38,41" />
+            <area alt="West Virginia" title="West Virginia" href="[[wvUrl]]" target="[[target]]" shape="poly" coords="482,207,482,201,484,195,486,191,489,191,492,186,497,180,498,175,503,177,506,177,503,175,500,172,497,172,495,174,493,174,490,176,487,180,484,175,474,175,470,164,470,177,466,181,462,186,459,192,456,197,455,203,460,209,466,212" />
+            <area alt="Wisconsin" title="Wisconsin" href="[[wiUrl]]" target="[[target]]" shape="poly" coords="366,148,380,147,392,145,393,140,393,130,392,122,395,114,395,109,390,111,390,107,387,104,386,99,378,96,369,95,364,93,362,90,358,87,358,83,353,86,347,88,343,89,343,96,343,99,339,102,336,105,341,108,339,113,339,119,346,120,353,127,356,135,358,144" />
+            <area alt="Wyoming" title="Wyoming" href="[[wyUrl]]" target="[[target]]" shape="poly" coords="156,105,174,107,191,110,208,111,228,112,223,168,206,168,187,165,170,163,153,161,149,160" />
+          </map>
+        </div>
+        -->
       </div>
-      -->
-    </div>
+      
   </template>
 
   <script>
@@ -219,13 +166,21 @@ Example:
       is: 'stately-map',
 
       properties: {
-
+        states: {
+          type: Array,
+          value: []
+        },
+        color: {
+          type: String,
+          value: '#ff0000'
+        }
       },
 
       attached: function() {
-        window.setTimeout(function() {
+        window.setTimeout(function() { // Forces map to resize when loaded
           this._onWidthChange();
-        }.bind(this), 1)
+        }.bind(this), 1);
+        this.set('activated', true); // Prevents this._color from running before element is attached
       },
       
       behaviors: [ Polymer.IronResizableBehavior ],
@@ -233,15 +188,27 @@ Example:
       listeners: { "iron-resize": "_onWidthChange" },
       
       _onWidthChange: function() {
-        this.width = this.$.canvas.clientWidth;
-        this.height = 12/15 * this.width;
-        this.$.mapDraw.style.width = this.width + 'px';
-        this.$.mapDraw.style.fontSize = this.width + 'px';
-        this.$.canvas.style.height = this.height + 'px';
-        /*    
-        this.$.blankImage.style.width = this.width + 'px';
-        this.$.blankImage.style.height = this.height + 'px';
-        */
+        if (this.activated) {
+          this.width = this.$.canvas.clientWidth;
+          this.height = 12/15 * this.width;
+          Polymer.dom(this.root).querySelector('#mapDraw').style.width = this.width + 'px';
+          Polymer.dom(this.root).querySelector('#mapDraw').style.fontSize = this.width + 'px';
+          this.$.canvas.style.height = this.height + 'px';
+          /*    
+          this.$.blankImage.style.width = this.width + 'px';
+          this.$.blankImage.style.height = this.height + 'px';
+          */
+        }
+      },
+      
+      _color: function(state) {
+        for (var i = 0; i < this.states.length; i++) {
+          if (this.states[i] === state) {
+            return this.color;
+          } else if (this.states[i].indexOf(':') === 2 && this.states[i].substring(0, 2) === state) {
+            return this.states[i].substring(this.states[i].indexOf(':') + 1, this.states[i].length);
+          }
+        }
       }
     });
   </script>
