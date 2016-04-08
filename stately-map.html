@@ -221,6 +221,12 @@ Example:
       properties: {
 
       },
+
+      attached: function() {
+        window.setTimeout(function() {
+          this._onWidthChange();
+        }.bind(this), 1)
+      },
       
       behaviors: [ Polymer.IronResizableBehavior ],
       
