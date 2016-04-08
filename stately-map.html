@@ -17,7 +17,7 @@ An element providing a map of the USA.
 
 Example:
 
-    <stately-map></stately-map>
+    <stately-map states='["pa", "sc", "nj", "tx:#0099ff"]' unselected-color="grey"></stately-map>
 
 @demo demo/index.html
 -->
@@ -43,61 +43,59 @@ Example:
     
 
       <div id="canvas">
-        <template is="dom-if" if="[[activated]]">
-          <ul id="mapDraw" class="stately">
-            <li data-state="al" class="al" style="color:[[_color('al')]]">A</li>
-            <li data-state="ak" class="ak" style="color:[[_color('ak')]]">B</li>
-            <li data-state="ar" class="ar" style="color:[[_color('ar')]]">C</li>
-            <li data-state="az" class="az" style="color:[[_color('az')]]">D</li>
-            <li data-state="ca" class="ca" style="color:[[_color('ca')]]">E</li>
-            <li data-state="co" class="co" style="color:[[_color('co')]]">F</li>
-            <li data-state="ct" class="ct" style="color:[[_color('ct')]]">G</li>
-            <li data-state="de" class="de" style="color:[[_color('de')]]">H</li>
-            <li data-state="dc" class="dc" style="color:[[_color('dc')]]">I</li>
-            <li data-state="fl" class="fl" style="color:[[_color('fl')]]">J</li>
-            <li data-state="ga" class="ga" style="color:[[_color('ga')]]">K</li>
-            <li data-state="hi" class="hi" style="color:[[_color('hi')]]">L</li>
-            <li data-state="id" class="id" style="color:[[_color('id')]]">M</li>
-            <li data-state="il" class="il" style="color:[[_color('il')]]">N</li>
-            <li data-state="in" class="in" style="color:[[_color('in')]]">O</li>
-            <li data-state="ia" class="ia" style="color:[[_color('ia')]]">P</li>
-            <li data-state="ks" class="ks" style="color:[[_color('ks')]]">Q</li>
-            <li data-state="ky" class="ky" style="color:[[_color('ky')]]">R</li>
-            <li data-state="la" class="la" style="color:[[_color('la')]]">S</li>
-            <li data-state="me" class="me" style="color:[[_color('me')]]">T</li>
-            <li data-state="md" class="md" style="color:[[_color('md')]]">U</li>
-            <li data-state="ma" class="ma" style="color:[[_color('ma')]]">V</li>
-            <li data-state="mi" class="mi" style="color:[[_color('mi')]]">W</li>
-            <li data-state="mn" class="mn" style="color:[[_color('mn')]]">X</li>
-            <li data-state="ms" class="ms" style="color:[[_color('ms')]]">Y</li>
-            <li data-state="mo" class="mo" style="color:[[_color('mo')]]">Z</li>
-            <li data-state="mt" class="mt" style="color:[[_color('mt')]]">a</li>
-            <li data-state="ne" class="ne" style="color:[[_color('ne')]]">b</li>
-            <li data-state="nv" class="nv" style="color:[[_color('nv')]]">c</li>
-            <li data-state="nh" class="nh" style="color:[[_color('nh')]]">d</li>
-            <li data-state="nj" class="nj" style="color:[[_color('nj')]]">e</li>
-            <li data-state="nm" class="nm" style="color:[[_color('nm')]]">f</li>
-            <li data-state="ny" class="ny" style="color:[[_color('ny')]]">g</li>
-            <li data-state="nc" class="nc" style="color:[[_color('nc')]]">h</li>
-            <li data-state="nd" class="nd" style="color:[[_color('nd')]]">i</li>
-            <li data-state="oh" class="oh" style="color:[[_color('oh')]]">j</li>           
-            <li data-state="ok" class="ok" style="color:[[_color('ok')]]">k</li>
-            <li data-state="or" class="or" style="color:[[_color('or')]]">l</li>
-            <li data-state="pa" class="pa" style="color:[[_color('pa')]]">m</li>
-            <li data-state="ri" class="ri" style="color:[[_color('ri')]]">n</li>
-            <li data-state="sc" class="sc" style="color:[[_color('sc')]]">o</li>
-            <li data-state="sd" class="sd" style="color:[[_color('sd')]]">p</li>
-            <li data-state="tn" class="tn" style="color:[[_color('tn')]]">q</li>
-            <li data-state="tx" class="tx" style="color:[[_color('tx')]]">r</li>
-            <li data-state="ut" class="ut" style="color:[[_color('ut')]]">s</li>
-            <li data-state="va" class="va" style="color:[[_color('va')]]">t</li>
-            <li data-state="vt" class="vt" style="color:[[_color('vt')]]">u</li>           
-            <li data-state="wa" class="wa" style="color:[[_color('wa')]]">v</li>
-            <li data-state="wv" class="wv" style="color:[[_color('wv')]]">w</li>
-            <li data-state="wi" class="wi" style="color:[[_color('wi')]]">x</li>
-            <li data-state="wy" class="wy" style="color:[[_color('wy')]]">y</li>
-          </ul>
-        </template>
+        <ul id="mapDraw" class="stately">
+          <li data-state="al" class="al" style$="color:[[_alColor]]">A</li>
+          <li data-state="ak" class="ak" style$="color:[[_akColor]]">B</li>
+          <li data-state="ar" class="ar" style$="color:[[_arColor]]">C</li>
+          <li data-state="az" class="az" style$="color:[[_azColor]]">D</li>
+          <li data-state="ca" class="ca" style$="color:[[_caColor]]">E</li>
+          <li data-state="co" class="co" style$="color:[[_coColor]]">F</li>
+          <li data-state="ct" class="ct" style$="color:[[_ctColor]]">G</li>
+          <li data-state="de" class="de" style$="color:[[_deColor]]">H</li>
+          <li data-state="dc" class="dc" style$="color:[[_dcColor]]">I</li>
+          <li data-state="fl" class="fl" style$="color:[[_flColor]]">J</li>
+          <li data-state="ga" class="ga" style$="color:[[_gaColor]]">K</li>
+          <li data-state="hi" class="hi" style$="color:[[_hiColor]]">L</li>
+          <li data-state="id" class="id" style$="color:[[_idColor]]">M</li>
+          <li data-state="il" class="il" style$="color:[[_ilColor]]">N</li>
+          <li data-state="in" class="in" style$="color:[[_inColor]]">O</li>
+          <li data-state="ia" class="ia" style$="color:[[_iaColor]]">P</li>
+          <li data-state="ks" class="ks" style$="color:[[_ksColor]]">Q</li>
+          <li data-state="ky" class="ky" style$="color:[[_kyColor]]">R</li>
+          <li data-state="la" class="la" style$="color:[[_laColor]]">S</li>
+          <li data-state="me" class="me" style$="color:[[_meColor]]">T</li>
+          <li data-state="md" class="md" style$="color:[[_mdColor]]">U</li>
+          <li data-state="ma" class="ma" style$="color:[[_maColor]]">V</li>
+          <li data-state="mi" class="mi" style$="color:[[_miColor]]">W</li>
+          <li data-state="mn" class="mn" style$="color:[[_mnColor]]">X</li>
+          <li data-state="ms" class="ms" style$="color:[[_msColor]]">Y</li>
+          <li data-state="mo" class="mo" style$="color:[[_moColor]]">Z</li>
+          <li data-state="mt" class="mt" style$="color:[[_mtColor]]">a</li>
+          <li data-state="ne" class="ne" style$="color:[[_neColor]]">b</li>
+          <li data-state="nv" class="nv" style$="color:[[_nvColor]]">c</li>
+          <li data-state="nh" class="nh" style$="color:[[_nhColor]]">d</li>
+          <li data-state="nj" class="nj" style$="color:[[_njColor]]">e</li>
+          <li data-state="nm" class="nm" style$="color:[[_nmColor]]">f</li>
+          <li data-state="ny" class="ny" style$="color:[[_nyColor]]">g</li>
+          <li data-state="nc" class="nc" style$="color:[[_ncColor]]">h</li>
+          <li data-state="nd" class="nd" style$="color:[[_ndColor]]">i</li>
+          <li data-state="oh" class="oh" style$="color:[[_ohColor]]">j</li>           
+          <li data-state="ok" class="ok" style$="color:[[_okColor]]">k</li>
+          <li data-state="or" class="or" style$="color:[[_orColor]]">l</li>
+          <li data-state="pa" class="pa" style$="color:[[_paColor]]">m</li>
+          <li data-state="ri" class="ri" style$="color:[[_riColor]]">n</li>
+          <li data-state="sc" class="sc" style$="color:[[_scColor]]">o</li>
+          <li data-state="sd" class="sd" style$="color:[[_sdColor]]">p</li>
+          <li data-state="tn" class="tn" style$="color:[[_tnColor]]">q</li>
+          <li data-state="tx" class="tx" style$="color:[[_txColor]]">r</li>
+          <li data-state="ut" class="ut" style$="color:[[_utColor]]">s</li>
+          <li data-state="va" class="va" style$="color:[[_vaColor]]">t</li>
+          <li data-state="vt" class="vt" style$="color:[[_vtColor]]">u</li>           
+          <li data-state="wa" class="wa" style$="color:[[_waColor]]">v</li>
+          <li data-state="wv" class="wv" style$="color:[[_wvColor]]">w</li>
+          <li data-state="wi" class="wi" style$="color:[[_wiColor]]">x</li>
+          <li data-state="wy" class="wy" style$="color:[[_wyColor]]">y</li>
+        </ul>
         
         <!--
         <div id="mapLinks">
@@ -170,17 +168,75 @@ Example:
           type: Array,
           value: []
         },
+        _states: {
+          type: Array,
+          value: [
+            'al',
+            'ak',
+            'ar',
+            'az',
+            'ca',
+            'co',
+            'ct',
+            'de',
+            'dc',
+            'fl',
+            'ga',
+            'hi',
+            'id',
+            'il',
+            'in',
+            'ia',
+            'ks',
+            'ky',
+            'la',
+            'me',
+            'md',
+            'ma',
+            'mi',
+            'mn',
+            'ms',
+            'mo',
+            'mt',
+            'ne',
+            'nv',
+            'nh',
+            'nj',
+            'nm',
+            'ny',
+            'nc',
+            'nd',
+            'oh',
+            'ok',
+            'or',
+            'pa',
+            'ri',
+            'sc',
+            'sd',
+            'tn',
+            'tx',
+            'ut',
+            'va',
+            'vt',
+            'wa',
+            'wv',
+            'wi',
+            'wy'
+          ]
+        },
         color: {
           type: String,
           value: '#ff0000'
+        },
+        unselectedColor: {
+          type: String,
+          value: '#000000'
         }
       },
 
       attached: function() {
-        window.setTimeout(function() { // Forces map to resize when loaded
-          this._onWidthChange();
-        }.bind(this), 1);
-        this.set('activated', true); // Prevents this._color from running before element is attached
+        this.colorStates();
+        this._onWidthChange();
       },
       
       behaviors: [ Polymer.IronResizableBehavior ],
@@ -188,25 +244,31 @@ Example:
       listeners: { "iron-resize": "_onWidthChange" },
       
       _onWidthChange: function() {
-        if (this.activated) {
-          this.width = this.$.canvas.clientWidth;
-          this.height = 12/15 * this.width;
-          Polymer.dom(this.root).querySelector('#mapDraw').style.width = this.width + 'px';
-          Polymer.dom(this.root).querySelector('#mapDraw').style.fontSize = this.width + 'px';
-          this.$.canvas.style.height = this.height + 'px';
-          /*    
-          this.$.blankImage.style.width = this.width + 'px';
-          this.$.blankImage.style.height = this.height + 'px';
-          */
-        }
+        this.width = this.$.canvas.clientWidth;
+        this.height = 12/15 * this.width;
+        this.$.mapDraw.style.width = this.width + 'px';
+        this.$.mapDraw.style.fontSize = this.width + 'px';
+        this.$.canvas.style.height = this.height + 'px';
+        /*    
+        this.$.blankImage.style.width = this.width + 'px';
+        this.$.blankImage.style.height = this.height + 'px';
+        */
       },
       
-      _color: function(state) {
-        for (var i = 0; i < this.states.length; i++) {
-          if (this.states[i] === state) {
-            return this.color;
-          } else if (this.states[i].indexOf(':') === 2 && this.states[i].substring(0, 2) === state) {
-            return this.states[i].substring(this.states[i].indexOf(':') + 1, this.states[i].length);
+      colorStates: function(state) { // Wow, really funky logic, but I know what's going on (I mean, I made it, right)
+        for (var i = 0; i < this._states.length; i++) {
+          var selected = false;
+          for (var j = 0; j < this.states.length; j++) {
+            if (this.states[j] === this._states[i]) {
+              this['_' + this._states[i] + 'Color'] = this.color;
+              selected = true;
+            } else if (this.states[j].indexOf(':') === 2 && this.states[j].substring(0, 2) === this._states[i]) {
+              this['_' + this._states[i] + 'Color'] = this.states[j].substring(this.states[j].indexOf(':') + 1, this.states[j].length);
+              selected = true;
+            }
+          }
+          if (!selected) {
+            this['_' + this._states[i] + 'Color'] = this.unselectedColor;
           }
         }
       }
