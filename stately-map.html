@@ -155,9 +155,6 @@ Example:
         </div>
         -->
       </div>
-    
-    <!-- Hack to detect if element was restamped -->
-    <template is="dom-if" if="true" on-dom-change="restamped"></template>
       
   </template>
 
@@ -237,9 +234,11 @@ Example:
         }
       },
 
-      restamped: function() {
-        this.colorStates();
-        this._onWidthChange();
+      attached: function() {
+        window.setTimeout(function() { // Probably a better way of doing this
+          this.colorStates();
+          this._onWidthChange();
+        }.bind(this), 1);
       },
       
       behaviors: [ Polymer.IronResizableBehavior ],
