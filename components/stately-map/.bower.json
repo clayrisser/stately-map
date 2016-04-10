@@ -1,0 +1,45 @@
+{
+  "name": "stately-map",
+  "authors": [
+    "JamRizzi <contact@jamrizzi.com>"
+  ],
+  "description": "An element providing a map of the USA.",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "stately",
+    "map",
+    "font",
+    "usa",
+    "america",
+    "state",
+    "states",
+    "united states"
+  ],
+  "main": "stately-map.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/jamrizzi/stately-map/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "stately": "https://github.com/intridea/stately.git",
+    "iron-resizable-behavior": "PolymerElements/iron-resizable-behavior#^1.0.3"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.0.0"
+  },
+  "_release": "c179e2485e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c179e2485e002f2e02899299730ad3c56bac7146"
+  },
+  "_source": "git://github.com/jamrizzi/stately-map.git",
+  "_target": "master",
+  "_originalSource": "jamrizzi/stately-map",
+  "_direct": true
+}

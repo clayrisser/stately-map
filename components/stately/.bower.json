@@ -1,0 +1,13 @@
+{
+  "name": "stately",
+  "homepage": "https://github.com/intridea/stately",
+  "_release": "8f406598d5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8f406598d5d53a750fb867eff602dc134667164c"
+  },
+  "_source": "https://github.com/intridea/stately.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/intridea/stately.git"
+}
