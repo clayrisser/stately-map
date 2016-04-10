@@ -22,7 +22,7 @@ Example:
 @demo demo/index.html
 -->
 
-<dom-module id="stately-map">
+<dom-module id="stately-map" is="dom-bind">
   <template>
     <style>
       #mapDraw {
@@ -40,7 +40,6 @@ Example:
         height: 480px;
       }
     </style>
-    
 
       <div id="canvas">
         <ul id="mapDraw" class="stately">
@@ -156,6 +155,9 @@ Example:
         </div>
         -->
       </div>
+    
+    <!-- Hack to detect if element was restamped -->
+    <template is="dom-if" if="true" on-dom-change="restamped"></template>
       
   </template>
 
@@ -164,10 +166,6 @@ Example:
       is: 'stately-map',
 
       properties: {
-        states: {
-          type: Array,
-          value: []
-        },
         _states: {
           type: Array,
           value: [
@@ -224,6 +222,11 @@ Example:
             'wy'
           ]
         },
+        states: {
+          type: Array,
+          value: [],
+          observer: '_statesChanged'
+        },
         color: {
           type: String,
           value: '#ff0000'
@@ -234,7 +237,7 @@ Example:
         }
       },
 
-      attached: function() {
+      restamped: function() {
         this.colorStates();
         this._onWidthChange();
       },
@@ -253,6 +256,10 @@ Example:
         this.$.blankImage.style.width = this.width + 'px';
         this.$.blankImage.style.height = this.height + 'px';
         */
+      },
+      
+      _statesChanged: function() {
+        this.colorStates();
       },
       
       colorStates: function(state) { // Wow, really funky logic, but I know what's going on (I mean, I made it, right)
