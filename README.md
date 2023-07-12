@@ -1,6 +1,8 @@
 # stately-map
 An element providing a map of the USA.
 
+![](assets/stately-map.jpg)
+
 [Demo](http://jamrizzi.github.io/stately-map/components/stately-map/demo)
 
 [Documentation](http://jamrizzi.github.io/stately-map/components/stately-map/)
